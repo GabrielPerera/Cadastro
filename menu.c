@@ -1,27 +1,25 @@
 	#include <stdio.h>
 	#include <stdlib.h>
+	#include "cadastrar.c"
+	
 	
 	// Main, arquivo que vai conter o Menu com as opções
 	void intro();
 	void menu();
 	
 	int main(int argc, char *argv[]) {
-		char introducao;
-		int opcao;
 		
-		intro();
-		
+				
 		menu();
-		
 		
 		return 0;
 	} // final da função main
 	void intro(){
 		
 		char introducao[60];
-		// atribuo um valor ao vetor
+		
 		strcpy(introducao, "Seja bem vindo, esta eh a area de menu, em que posso ajudar?");
-		// imprimo esse valor na tela
+		
 		printf("%s\n\n", introducao);
 		
 		printf("Escolha umas das opcoes a seguir!\n");
@@ -30,15 +28,17 @@
 		printf("Digite 3 para listar todos os cadastros.\n");
 		printf("Digite 4 para excluir um cadastro.\n");
 		printf("Difite 0 para encerrar.\n");
+		printf("Digite aqui a opcao escolhida:");
+		
 } // final da função textos
 	void menu(){
 		
 		int opcao;
 		
-		scanf("%d", &opcao);
 		
-		while(1){		
-			printf("Digite aqui a opcao escolhida:");
+		while(1){
+		
+			intro();	
 			scanf("%d", &opcao);
 			getchar();
 			
@@ -57,6 +57,7 @@
 					system("cls");
 					printf("A opcao que voce selecionou foi 1.\n\n");
 					printf("Vamos fazer seu cadastro, um momento.");
+					int cad = cadastro();
 				break;
 				case 2:
 					system("cls");
@@ -76,6 +77,7 @@
 				
 			}
 		}
+		system("cls");
 	}
 			
 	} // final da função menu
