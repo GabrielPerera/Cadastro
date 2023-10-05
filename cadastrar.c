@@ -4,7 +4,7 @@
 
 struct informacoes{
 	char nome[30]; 
-	unsigned char idade;
+	int idade;
 	int telefone;
 	int cpf;
 	char email[30];
@@ -25,7 +25,7 @@ int cadastro() {
 	fgets(dados.nome,30,stdin);
 	
 	printf("Idade_________________: ");
-	scanf("%c", &dados.idade);
+	scanf("%d", &dados.idade);
 	getchar();
 	
 	printf("Telefone___________________: ");
@@ -60,6 +60,7 @@ int cadastro() {
 	fflush(stdin);
 	fgets(dados.nacionalidade,10,stdin);
 	
+	menu();
 	
 	return 0;
 }

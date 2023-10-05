@@ -6,10 +6,6 @@ int editar() {
 	
 	
 int opcao_edit;
-
-while(1){
-		
-		
 		
 	printf("Qual dos dados voce deseja editar?\n\n");
 	
@@ -20,10 +16,10 @@ while(1){
 	printf("Digite 5 para Email.\n");
 	printf("Digite 6 para Estado Civil.\n");
 	printf("Digite 7 para CEP.\n");
-	printf("Digite 8 para Endereço.\n");
+	printf("Digite 8 para Endereco.\n");
 	printf("Digite 9 para Numero da casa.\n");
 	printf("Digite 10 para Nacionalidade.\n");
-	printf("Digite 0 para encerrar a edicao.\n");
+	printf("Digite qualquer coisa para sair da edicao.\n");
 	printf("Digite aqui: ");
 	scanf("%d", &opcao_edit);
 	getchar();
@@ -36,9 +32,9 @@ while(1){
 			fgets(dados.nome, sizeof(dados.nome), stdin);
 		break;
 		case 2:
-			printf("A idade que esta eh: %c\n", dados.idade);
+			printf("A idade que esta eh: %d\n", dados.idade);
 			printf("Digite a nova idade: ");
-			scanf("%c", &dados.idade);
+			scanf("%d", &dados.idade);
 			getchar();
 		break;
 		case 3:
@@ -93,7 +89,7 @@ while(1){
 			} 
 		
 		system("cls");	
-	}
+	
 	return 0;
 }
 

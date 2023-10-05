@@ -1,20 +1,20 @@
-	#include <stdio.h>
-	#include <stdlib.h>
-	#include "cadastrar.c"
-	#include "editar.c"
+#include <stdio.h>
+#include <stdlib.h>
+#include "cadastrar.c"
+#include "editar.c"
 	
 	// Main, arquivo que vai conter o Menu com as opções
-	void intro();
-	void menu();
+void intro();
+void menu();
 	
-	int main(int argc, char *argv[]) {
+int main(int argc, char *argv[]) {
 		
 				
-		menu();
+	menu();
 		
-		return 0;
-	} // final da função main
-	void intro(){
+	return 0;
+} // final da função main
+void intro(){
 		
 		printf("Seja bem vindo, esta eh a area de menu, em que posso ajudar?\n\n");
 		
@@ -27,7 +27,7 @@
 		printf("Digite aqui a opcao escolhida:");
 		
 } // final da função textos
-	void menu(){
+void menu(){
 		
 		int opcao;
 		
