@@ -3,6 +3,7 @@
 #include "cadastrar.c"
 #include "editar.c"
 #include "listar.c"
+#include "excluir.c"
 	
 	// Main, arquivo que vai conter o Menu com as opções
 void intro();
@@ -72,7 +73,7 @@ int menu(){
 					system("cls");
 					printf("A opcao que voce selecionou foi 4.\n\n");
 					printf("Vamos excluir seu cadastro, um momento.");
-					
+					int exc = excluir();
 				break;
 				
 			}
