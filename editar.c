@@ -98,8 +98,7 @@ int opcao_edit;
 			printf("Digite a nova nacionalidade: ");
 			fflush;
 			fgets(pessoas[indice_pessoa].nacionalidade, sizeof(pessoas[indice_pessoa].nacionalidade), stdin);
-		break;	
-			
+		break;
 			} 
 		
 		system("cls");

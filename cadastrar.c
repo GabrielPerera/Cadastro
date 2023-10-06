@@ -12,11 +12,11 @@
 		int telefone;
 		int cpf;
 		char email[30];
-		char estCivil[10];
+		char estCivil[15];
 		int cep;
 		char endereco[50];
 		int numeroCasa;
-		char nacionalidade[10];  
+		char nacionalidade[15];  
 	};
 	
 	struct informacoes pessoas[MAX_PESSOAS];
