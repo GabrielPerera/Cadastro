@@ -20,7 +20,10 @@ int editar() {
     indice_pessoa--;
 	
 int opcao_edit;
-		
+int sair = 0;
+
+while(!sair){
+
 	printf("Qual dos dados voce deseja editar?\n\n");
 	
 	printf("Digite 1 para Nome.\n");
@@ -33,7 +36,7 @@ int opcao_edit;
 	printf("Digite 8 para Endereco.\n");
 	printf("Digite 9 para Numero da casa.\n");
 	printf("Digite 10 para Nacionalidade.\n");
-	printf("Digite qualquer coisa para sair da edicao.\n");
+	printf("Digite 0 para sair da edicao.\n");
 	printf("Digite aqui: ");
 	scanf("%d", &opcao_edit);
 	getchar();
@@ -99,10 +102,13 @@ int opcao_edit;
 			fflush;
 			fgets(pessoas[indice_pessoa].nacionalidade, sizeof(pessoas[indice_pessoa].nacionalidade), stdin);
 		break;
+		default:
+			sair = 1;
+			break;
 			} 
 		
 		system("cls");
-			
+}
 	
 	return 0;
 }

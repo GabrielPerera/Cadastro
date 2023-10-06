@@ -21,7 +21,7 @@ int listar() {
             printf("Email: %s\n", pessoas[i].email);
             printf("Estado Civil: %s\n", pessoas[i].estCivil);
             printf("CEP: %d\n", pessoas[i].cep);
-            printf("Endereço: %s\n", pessoas[i].endereco);
+            printf("Endereco: %s\n", pessoas[i].endereco);
             printf("Numero da casa: %d\n", pessoas[i].numeroCasa);
             printf("Nacionalidade: %s\n", pessoas[i].nacionalidade);
             printf("\n\n\n");
