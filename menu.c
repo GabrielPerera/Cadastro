@@ -2,10 +2,11 @@
 #include <stdlib.h>
 #include "cadastrar.c"
 #include "editar.c"
+#include "listar.c"
 	
 	// Main, arquivo que vai conter o Menu com as opções
 void intro();
-void menu();
+int menu();
 	
 int main(int argc, char *argv[]) {
 		
@@ -27,7 +28,7 @@ void intro(){
 		printf("Digite aqui a opcao escolhida:");
 		
 } // final da função textos
-void menu(){
+int menu(){
 		
 		int opcao;
 		
@@ -64,8 +65,8 @@ void menu(){
 				case 3:
 					system("cls");
 					printf("A opcao que voce selecionou foi 3.\n\n");
-					printf("Vamos todos os cadastros, um momento.");
-					
+					printf("Vamos mostar os cadastros, um momento.");
+					int list = listar();
 				break;
 				case 4:
 					system("cls");
